@@ -1,0 +1,1 @@
+Example of using generic rest controller, related to this [SO answer](https://stackoverflow.com/a/51694938/5380322).
