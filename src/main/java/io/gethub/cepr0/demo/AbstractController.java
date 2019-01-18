@@ -1,6 +1,5 @@
 package io.gethub.cepr0.demo;
 
-import lombok.Getter;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.ResponseEntity;
@@ -8,9 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-public class AbstractController<T> {
+public abstract class AbstractController<T> {
 
-	@Getter private final JpaRepository<T, Long> repo;
+	protected final JpaRepository<T, Long> repo;
 
 	public AbstractController(JpaRepository<T, Long> repo) {
 		this.repo = repo;
